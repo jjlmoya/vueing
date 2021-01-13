@@ -1,0 +1,82 @@
+:root {
+  /* Core
+   * ------------------------------------------------------------------------ */
+  --is-mobile: "true";
+
+  @include breakpoint($bp) {
+    --is-mobile: "false";
+  }
+
+  /* Common
+    * ----------------------------------------------------------------------- */
+
+  // Z-index
+  --z-index-pawn: 100;
+  --z-index-knight: 200;
+  --z-index-bishop: 300;
+  --z-index-rook: 400;
+  --z-index-queen: 500;
+  --z-index-king: 600;
+
+  // Typhography
+  --font-family: 'Muli', sans-serif;
+  --font-size: #{em(16px)};
+
+  @include breakpoint(360px down) {
+    --font-size: #{em(14px)};
+  }
+
+  // @include breakpoint(1921px) {
+  //   //--font-size: #{calc(0.01em + 0.833vw)};
+  //   --font-size: #{calc(1em + 0.2vw)};
+  // }
+
+  // Radiuses
+  --radius: #{em(4px)};
+  --radius-two: 50%;
+
+  // Gaps
+  --gap-wrapper: #{em(16px)};
+
+  @include breakpoint(1024px) {
+    --gap-wrapper: #{em(32px)};
+  }
+
+  // Spaces
+  --space-pages: #{em(32px)};
+  --space-sections: #{em(64px)};
+  --space-tags-cms: #{em(40px)};
+
+  @include breakpoint($bp) {
+    --space-sections: #{em(104px)};
+  }
+
+  @include breakpoint(1600px) {
+    --space-pages: #{em(64px)};
+  }
+
+  // Wrappers
+  --wrapper: #{em(1400px)};
+  --wrapper-two: #{em(1800px)};
+
+  /* Components
+    * ----------------------------------------------------------------------- */
+
+  // Header
+  --header-height: #{em(56px)};
+  --header-toolbar-height: #{em(56px)};
+
+  @include breakpoint($bp) {
+    --header-toolbar-height: #{em(0px)};
+  }
+
+  // Nav
+  --nav-width: #{em(300px)};
+
+  // TitleSection
+  --title-section-margin: #{em(32px)};
+
+  @include breakpoint(768px) {
+    --title-section-margin: var(--gap-wrapper);
+  }
+}

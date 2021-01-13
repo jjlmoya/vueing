@@ -1,4 +1,5 @@
 import components from './components'
+
 const ComponentLibrary = {
   install(Vue, options = {}) {
     for (const componentName in components) {

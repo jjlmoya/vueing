@@ -1,5 +1,17 @@
 # vueing
 
+
+## CSS Variables: 
+```
+:root {
+    --text-line-height: 1;
+    --color-primary: red;
+    --color-text-one: black;
+    --color-text-two: white;
+}
+
+
+```
 ## Project setup
 ```
 npm install

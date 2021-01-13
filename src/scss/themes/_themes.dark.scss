@@ -1,0 +1,89 @@
+.dark-mode {
+  // Pures
+  --color-white: #fff;
+  --color-black: #000;
+  --color-leo: #db5837;
+  --color-leo-light: #{lighten(#db5837, 5%)};
+  --color-tiger: #f07e00;
+  --color-tiger-light: #{lighten(#f07e00, 5%)};
+  --color-cancer: #3f3d48; //text
+  --color-scorpius: #514d5f; //lines
+  --color-sirio: #3f3d48;
+  --color-lyra: #fffffe; //inputs
+  --color-corvus: #fff9f7; //background
+  --color-vega: #292634;
+  --color-crux: #6441a5;
+  --color-crux-light: #{lighten(#6441a5, 5%)};
+  --color-taurus: #7289da;
+  --color-taurus-light: #{lighten(#7289da, 5%)};
+  --color-serpens: #4285f4;
+  --color-serpens-light: #{lighten(#4285f4, 5%)};
+
+  // Custom Colors
+  --color-primary: var(--color-leo);
+  --color-primary-light: var(--color-leo-light);
+  --color-cta: var(--color-tiger);
+  --color-cta-light: var(--color-tiger-light);
+  --color-text: var(--color-cancer);
+  --color-text-two: #0c0c0c;
+  --color-border: var(--color-scorpius);
+  --color-border-two: var(--color-sirio);
+  --color-bg-one: var(--color-corvus);
+  --color-bg-two: var(--color-lyra);
+  --color-bg-three: var(--color-vega);
+  --color-success: #28a745;
+  --color-error: #ca4848;
+  --color-warning: #ffc107;
+  --color-gold: #e6b945;
+  --color-silver: #b7c6c9;
+  --color-bronze: #db9f76;
+
+  // Shadows
+  --shadow: 0 0 #{em(16px)} rgba(0, 0, 0, 0.06);
+  --shadow-two: 0 0 #{em(16px)} rgba(0, 0, 0, 0.3);
+  --shadow-three: 0 0 #{em(16px)} rgba(0, 0, 0, 0.3);
+  --shadow-four: 0 0 #{em(4px)} rgba(0, 0, 0, 1);
+
+  @include breakpoint(1024px) {
+    --shadow: 0 0 #{em(32px)} rgba(0, 0, 0, 0.06);
+    --shadow-two: 0 0 #{em(32px)} rgba(0, 0, 0, 0.3);
+  }
+
+  // Buttons
+  --button-color: var(--color-text);
+  --button-bg-color: var(--color-bg-one);
+  --button-color-hover: var(--button-primary-color);
+  --button-bg-color-hover: var(--button-primary-bg-color);
+  --button-cta-color: var(--color-white);
+  --button-cta-bg-color: var(--color-cta);
+  --button-cta-color-hover: var(--color-white);
+  --button-cta-bg-color-hover: var(--color-cta-light);
+  --button-primary-color: var(--color-white);
+  --button-primary-bg-color: var(--color-primary);
+  --button-primary-color-hover: var(--color-white);
+  --button-primary-bg-color-hover: var(--color-primary-light);
+  --button-secondary-color: var(--color-text);
+  --button-secondary-bg-color: var(--color-bg-two);
+  --button-secondary-color-hover: var(--button-primary-color);
+  --button-secondary-bg-color-hover: var(--button-primary-bg-color);
+  --button-tertiary-color: var(--color-text);
+  --button-tertiary-bg-color: transparent;
+  --button-tertiary-color-hover: var(--color-text-alt);
+  --button-tertiary-bg-color-hover: transparent;
+  --button-twitch-color: var(--color-white);
+  --button-twitch-bg-color: var(--color-crux);
+  --button-twitch-color-hover: var(--color-white);
+  --button-twitch-bg-color-hover: var(--color-crux-light);
+  --button-discord-color: var(--color-white);
+  --button-discord-bg-color: var(--color-taurus);
+  --button-discord-color-hover: var(--color-white);
+  --button-discord-bg-color-hover: var(--color-taurus-light);
+  --button-google-color: var(--color-white);
+  --button-google-bg-color: var(--color-serpens);
+  --button-google-color-hover: var(--color-white);
+  --button-google-bg-color-hover: var(--color-serpens-light);
+
+  // Logo
+  --logo-color-primary: var(--color-primary);
+  --logo-color-secondary: var(--color-white);
+}

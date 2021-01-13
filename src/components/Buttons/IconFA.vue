@@ -41,7 +41,7 @@
 <style lang="scss">
   .vg-icon-fa {
     background-color: var(--color-primary);
-    color: var(--color-text-1);
+    color: var(--color-text-one);
 
     &--ghost {
       color: var(--color-primary);
