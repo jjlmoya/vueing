@@ -1,0 +1,9 @@
+src
+public
+.gitignore
+.npmignore
+babel.config.js
+node_modules
+dist/demo.html
+dist/vueing.umd.*
+dist/*.map
