@@ -16,7 +16,7 @@
 
 <script>
     export default {
-        name: 'vg-icon-fa',
+        name: 'VgButtonIconFa',
          ghost: {
                 type: Boolean,
                 default: false

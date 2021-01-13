@@ -1,7 +1,7 @@
 import ButtonDefault from './Default'
 import ButtonIconFA from './IconFA'
 
-export default {
+export default [
     ButtonDefault,
     ButtonIconFA
-}
+]

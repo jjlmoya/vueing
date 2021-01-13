@@ -1,1 +1,4 @@
-export { default as Buttons } from './Buttons'
+import Buttons from './Buttons'
+export default [
+    ...Buttons
+]
